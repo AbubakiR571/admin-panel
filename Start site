@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chiroyli Start Site — Abubakir</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: linear-gradient(135deg,#0f172a 0%, #081129 50%, #07203a 100%);
+      --card: rgba(255,255,255,0.06);
+      --glass: rgba(255,255,255,0.06);
+      --accent: #6ee7b7;
+      --accent-2: #60a5fa;
+      --text: #e6eef8;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter,system-ui,Segoe UI,Roberto,Arial; color:var(--text); background:var(--bg); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:20px 28px;backdrop-filter: blur(6px);}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#012;}
+    nav a{margin-left:18px;color:rgba(230,238,248,0.85);text-decoration:none;font-weight:600}
+    nav a:hover{opacity:0.9}
+
+    .container{max-width:1100px;margin:30px auto;padding:0 20px}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:center;margin-top:30px}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));padding:36px;border-radius:16px;box-shadow:0 6px 30px rgba(2,6,23,0.6);}
+    h1{font-size:34px;margin:0 0 10px 0;line-height:1.05}
+    p.lead{color:rgba(230,238,248,0.8);margin:0 0 18px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#012;font-weight:700;text-decoration:none}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+    .feature{background:var(--card);padding:18px;border-radius:12px}
+    .feature h3{margin:6px 0 8px}
+    .feature p{margin:0;color:rgba(230,238,248,0.7);font-size:14px}
+
+    .side-preview{position:relative}
+    .phone{width:100%;max-width:380px;height:640px;border-radius:28px;background:linear-gradient(180deg,#05263f,#06304f);padding:18px;border:6px solid rgba(255,255,255,0.04);box-shadow:0 12px 40px rgba(2,8,23,0.6)}
+    .screen{background:#052735;height:100%;border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .msg{background:rgba(255,255,255,0.06);padding:10px;border-radius:10px;color:var(--text);}
+    .msg.me{background:linear-gradient(90deg, rgba(110,231,183,0.14), rgba(96,165,250,0.08));align-self:flex-end}
+
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:30px}
+    .card{background:var(--glass);padding:18px;border-radius:12px}
+
+    footer{margin-top:40px;padding:24px;text-align:center;color:rgba(230,238,248,0.6)}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .features{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr}
+      .phone{max-width:100%}
+    }
+
+    /* subtle animations */
+    .fade-up{opacity:0;transform:translateY(10px);animation:fadeUp .6s forwards}
+    .fade-up.delay{animation-delay:0.12s}
+    @keyframes fadeUp{to{opacity:1;transform:none}}
+
+    /* tiny floating shapes */
+    .decor{position:fixed;right:14px;bottom:14px;opacity:0.08;font-size:140px;pointer-events:none}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">AS</div>
+      <div>
+        <div style="font-weight:800">StartSite</div>
+        <div style="font-size:12px;color:rgba(230,238,248,0.6)">Chiroyli va tez</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#features">Xususiyatlar</a>
+      <a href="#works">Namoyish</a>
+      <a href="#contact">Bog'lanish</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card fade-up">
+        <h1>Chiroyli, tez va zamonaviy sayt — hoziroq ishga tushiring</h1>
+        <p class="lead">Oddiy, toza dizayn bilan portfolio, mahsulot sahifasi yoki landing page. Mobil va desktop uchun moslashtirilgan.</p>
+        <a class="btn" href="#contact" onclick="scrollToSection(event,'contact')">Bepul demo ko‘rish</a>
+
+        <div class="features" id="features">
+          <div class="feature">
+            <strong>Responsiv dizayn</strong>
+            <p>Har ekran uchun moslashuv — mobil, planshet, desktop.</p>
+          </div>
+          <div class="feature">
+            <strong>Yengil va tez</strong>
+            <p>Minimal kod, tez yuklanish, yaxshi tajriba.</p>
+          </div>
+          <div class="feature">
+            <strong>Interaktiv elementlar</strong>
+            <p>Yumshoq animatsiyalar va oson sozlanadigan bloklar.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="side-preview fade-up delay">
+        <div class="phone">
+          <div class="screen">
+            <div class="msg">Salom! Bu sening yangi sayting.</div>
+            <div class="msg me">Zo'r — juda chiroyli!</div>
+            <div class="msg">Portfolio, aloqa formasi va mahsulot bloklari qo'shildi.</div>
+            <div style="margin-top:auto;color:rgba(230,238,248,0.5);font-size:12px">Preview • Mobile view</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards" id="works">
+      <div class="card fade-up">
+        <h3>Portfolio bloki</h3>
+        <p>Rasm yoki video, qisqacha tavsif va "batafsil" tugmasi.</p>
+      </div>
+      <div class="card fade-up delay">
+        <h3>Mahsulot / xizmat</h3>
+        <p>Kengaytirilgan xususiyatlar, narx va sotib olish tugmasi joylashadi.</p>
+      </div>
+    </section>
+
+    <section style="margin-top:26px;" id="contact">
+      <div class="hero-card fade-up">
+        <h2>Bog'lanish</h2>
+        <p class="lead">Siz uchun saytni sozlab berishim mumkin — ism, email va qisqacha xabar qoldiring.</p>
+        <form id="contactForm" onsubmit="submitForm(event)">
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <input name="name" placeholder="Ismingiz" required style="flex:1;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text)">
+            <input name="email" type="email" placeholder="Email" required style="flex:1;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text)">
+          </div>
+          <textarea name="message" placeholder="Qisqacha xabar" required style="width:100%;margin-top:12px;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text)"></textarea>
+          <div style="margin-top:12px">
+            <button class="btn" type="submit">Xabar yuborish</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 StartSite — Tez va chiroyli saytlar • Tayyor demo
+    </footer>
+  </main>
+
+  <div class="decor">✨</div>
+
+  <script>
+    // Smooth scroll helper
+    function scrollToSection(e,id){
+      e && e.preventDefault();
+      document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});
+    }
+
+    // Form submit (frontend demo only)
+    function submitForm(e){
+      e.preventDefault();
+      const f = e.target;
+      const data = {name:f.name.value,email:f.email.value,message:f.message.value};
+      // Demo behavior: show a friendly message
+      alert('Rahmat, '+data.name+"! Xabaringiz qabul qilindi.\nMen tez orada bog'lanaman.");
+      f.reset();
+    }
+
+    // simple fade-in for elements with .fade-up
+    document.addEventListener('DOMContentLoaded',()=>{
+      document.querySelectorAll('.fade-up').forEach((el,i)=>{
+        setTimeout(()=>el.style.opacity='1', 120*i);
+      });
+    });
+  </script>
+</body>
+</html>
