@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Premium One-Page — StartSite</title>
+  <meta name="description" content="Premium, tez va chiroyli one-page sayt — portfolio, xizmatlar va aloqa." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <div class="logo">AS</div>
+        <div>
+          <div style="font-weight:800">StartSite</div>
+          <div style="font-size:12px;color:var(--muted)">Premium one-page</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Communication</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="card fade">
+        <h1>Fast, beautiful and responsive website - start now</h1>
+        <p class="lead">Portfolio, landing or corporate site — we combine design + speed. Mobile-friendly, optimized for SEO.</p>
+
+        <div class="actions">
+          <a class="btn" href="#contact">Place an order</a>
+          <a class="btn alt" href="#projects">View portfolio</a>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <strong>Responsive</strong>
+            <div>Adaptation for every screen</div>
+          </div>
+          <div class="feature">
+            <strong>Light</strong>
+            <div>Minimal code, fast loading</div>
+          </div>
+          <div class="feature">
+            <strong>Easy to adjust</strong>
+            <div>Easy to change colors, text, and images</div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="mini">
+            <strong>Get to work quickly</strong>
+            <div style="color:var(--muted)">With HTML/CSS/JS in minutes.</div>
+          </div>
+          <div class="mini">
+            <strong>Support</strong>
+            <div style="color:var(--muted)">Full setup and deployment services.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="phone fade delay">
+        <div class="screen">
+          <div class="msg">Hello! Welcome to your new StartSite.</div>
+          <div class="msg me">Excellent — the design turned out great..</div>
+          <div class="msg">Portfolio, xususiyatlar va aloqa formasi shu yerda.</div>
+          <div style="margin-top:auto;color:rgba(230,238,248,0.45);font-size:12px">Preview • Mobile</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" style="margin-top:28px">
+      <h2 style="margin-bottom:12px">Services</h2>
+      <div class="projects">
+        <div class="project fade">
+          <img src="https://picsum.photos/seed/a1/800/500" alt="web">
+          <div class="pbody">
+            <strong>Vebsite create</strong>
+            <div style="color:var(--muted)">Portfolio, company site, landing.</div>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+          </div>
+        </div>
+
+        <div class="project fade delay">
+          <img src="https://picsum.photos/seed/a2/800/500" alt="mobile">
+          <div class="pbody">
+            <strong>PWA / Mobile Apps</strong>
+            <div style="color:var(--muted)">Applications that run in the browser.</div>
+            <div class="tags"><span class="tag">PWA</span><span class="tag">Responsive</span></div>
+          </div>
+        </div>
+
+        <div class="project fade">
+          <img src="https://picsum.photos/seed/a3/800/500" alt="ecom">
+          <div class="pbody">
+            <strong>E-commerce</strong>
+            <div style="color:var(--muted)">Product pages and payment integration.</div>
+            <div class="tags"><span class="tag">Shop</span><span class="tag">Stripe</span></div>
+          </div>
+        </div>
+
+        <div class="project fade delay">
+          <img src="https://picsum.photos/seed/a4/800/500" alt="dashboard">
+          <div class="pbody">
+            <strong>Dashboard</strong>
+            <div style="color:var(--muted)">Statistics and admin panels.</div>
+            <div class="tags"><span class="tag">React</span><span class="tag">API</span></div>
+          </div>
+        </div>
+
+        <div class="project fade">
+          <img src="https://picsum.photos/seed/a5/800/500" alt="branding">
+          <div class="pbody">
+            <strong>Branding</strong>
+            <div style="color:var(--muted)">Logo and visual identity.</div>
+            <div class="tags"><span class="tag">Design</span></div>
+          </div>
+        </div>
+
+        <div class="project fade delay">
+          <img src="https://picsum.photos/seed/a6/800/500" alt="seo">
+          <div class="pbody">
+            <strong>SEO & Marketing</strong>
+            <div style="color:var(--muted)">Search engine optimization and advertising.</div>
+            <div class="tags"><span class="tag">SEO</span><span class="tag">Ads</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="left card fade">
+        <h3>Biz haqimizda</h3>
+        <p style="color:var(--muted)">StartSite is a small team, big ideas. We focus on design, frontend and product strategy. Individual approach to each project and fast delivery.</p>
+        <ul style="color:var(--muted);margin-top:12px">
+          <li>– Simple and clear UX</li>
+          <li>– Fast loading pages</li>
+          <li>– Responsive and SEO ready</li>
+        </ul>
+      </div>
+
+      <div class="right card fade delay" id="contact">
+        <h3>Aloqa</h3>
+        <p style="color:var(--muted)">Leave your name, email, and a short message to get started.</p>
+        <form id="contactForm">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea name="message" rows="5" placeholder="A brief message" required></textarea>
+          <div style="display:flex;gap:8px;justify-content:flex-end">
+            <button type="submit">Sending</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 StartSite — Fast and beautiful sites • Ready demo
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
